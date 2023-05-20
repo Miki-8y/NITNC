@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Readme</title>
+</head>
+
+
+
+<body>
+    <h1>Readme</h1>
+    Splash FightersのReadmeです．<br><br>
+    
+~~~~~~~~~~~~~~~~~~<br>
+Splash Fighters Ver.1.0.0<br>
+~~~~~~~~~~~~~~~~~~<br>
+<br>
+〇============================================〇<br>
+【ソフト名】Splash Fighters<br>
+【製作者】湯浅太貴<br>
+【種別】フリーウェア<br>
+【製作日】2021/1/11<br>
+【最終更新日】2023/5/20<br>
+【連絡先メールアドレス】taichan.y.n.n@gmail.com<br>
+【バージョン】1.0.0<br>
+【実行ファイル名】splashfighters.exe<br>
+【開発環境】Windows10 Home 64 ビット + Cygwin 3.1.4-1<br>
+【動作環境】Windows10 Home 64 ビット + Cygwin<br>
+〇============================================〇<br>
+<br>
+<<著作権表示および免責事項>><br>
+▼本ソフトはフリーソフトであり，自由に使用できます．<br>
+▼著作権は製作者である"湯浅太貴"に帰属します．<br>
+▼無断で売買，改変，ローカライズすることを禁じます．<br>
+▼本ソフトウェアを使用したことによって生じたすべての損害・不具合に関して，<br>
+製作者および製作者の所属する組織は一切の責任を負いません．<br>
+<br>
+<br>
+<br>
+------------------------------------------------<br>
+<br>
+<br>
+<br>
+◇概要◇<br>
+  本ソフトウェアは，対戦型ゲームです．プレイヤーと敵に分かれてインクを塗り合います．<br>
+起動するとスタート画面が表示されます(図1)．
+
+<div style="text-align: center">
+<figure><img src="Gameimage\GameStartScreen.png">
+<figcaption>図1:スタート画面</figcaption></figure><br>
+</div>
+
+
+スタート画面で'e'キーを押すとゲーム画面が表示されます(図2).<br>
+プレイヤーは，この画面上で敵とインクを塗り合うことができます．プレイヤーと敵が重なった
+(衝突した)場合は敵のスピードが速くなります(具体的には60msスピードアップ)．
+塗り合う時間は30秒間です.残り時間はゲーム画面の最下部に表示しています．
+<div style="text-align: center">
+<figure><img src="Gameimage\GameContentsScreen1.png">
+<figcaption>図2:ゲーム画面</figcaption></figure><br>
+</div>
+
+
+ゲーム画面で30秒が経過すると，ゲーム画面の最下部に「Time up!! Press 'e'」が表示されます．
+この状態では，プレイヤーと敵は動くことができません．
+<div style="text-align: center">
+<figure><img src="Gameimage\GameContentsScreen2.png">
+<figcaption>図3:ゲーム画面</figcaption></figure><br>
+</div>
+
+
+ゲーム画面の最下部に「Time up!! Press 'e'」が表示されているとき，'e'キーを押すと
+リザルト画面が表示されます(図4)．プレイヤーのインクマス(インクが塗られているマス)
+が敵のインクマスよりも多かったら，リザルト画面の左上に「Win!」が表示されます．また，
+敵のインクマスがプレイヤーのインクマスよりも多かったら，「Lose...」が表示されます．
+また，プレイヤーと敵のインクマスが同じであれば，「Draw:)」が表示されます．
+<div style="text-align: center">
+<figure><img src="Gameimage\GameResultScreen.png">
+<figcaption>図4:リザルト画面</figcaption></figure><br>
+</div>
+
+
+リザルト画面で'e'キーを押すとエンド画面が表示されます．この画面で'e'キーを押すと
+もう一度ゲームを遊ぶことができます．また，'Esc'キーを押すとゲームをやめることができます．
+
+
+
+<br>
+<br>
+<br>
+◇動作条件◇<br>
+・Windows10<br>
+・Cygwin<br>
+・GLUT<br>
+<br>
+<br>
+<br>
+◇ファイル構成◇<br>
+Manifest.pngをご参照ください．<br>
+<br>
+<br>
+<br>
+◇インストール◇<br>
+任意のフォルダにコピーしてください．<br>
+<br>
+<br>
+<br>
+◇アンインストール◇<br>
+コピーしたフォルダをそのまま削除してください．<br>
+<br>
+<br>
+<br>
+◇起動◇<br>
+Cygwinで実行することを強くお勧めします．<br>
+コマンドライン上で，次のコマンドを実行してください．<br>
+./splashfighters.exe<br>
+<br>
+<br>
+<br>
+起動しない場合，コマンドライン上で次のコマンドを実行してください．<br>
+make && ./splashfighters.exe<br>
+<br>
+<br>
+<br>
+◇操作◇<br>
+- ゲーム画面(図2)では，矢印キーでプレイヤーを上,下,左,右に動かすことができます．
+また，'p'キーを押すとプレイヤーがいる場所にインクを塗ります．プレイヤーが
+敵と重なっているときにインクを塗ることはできません．
+
+<br>
+<br>
+<br>
+◇終了方法◇<br>
+1. ウィンドウを右上の×ボタンで消します<br>
+2. Cygwinのウィンドウを最前面にして，Ctrl+Cを長押しします．<br>
+3. Escキーを押します．<br>
+<br>
+<br>
+<br>
+------------------------------------------------<br>
+■更新履歴■<br>
+2020/1/11 Ver.1.0.0 - 初版公開<br>
+</body>
+</html>
